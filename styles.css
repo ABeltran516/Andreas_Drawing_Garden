@@ -28,6 +28,8 @@ body {
 :root {
     --background_main: #EBF3FF;
     --card: #f8f9fa;
+    --title_color: #384657;
+    --subtitle_color: #206FD6;
     --footer_color: #f2f2f2;
     --footer_font1: 1.5rem;
     --footer_font2: 1.4rem;
@@ -48,11 +50,25 @@ main {
     max-width: 42.5rem;
 }
 
-h1 {
+.Title-container {
     position: absolute;
+    top: 22.6rem;
+    left: 34%;
+    transform: translateX(-50%);
+}
+
+h1 {
     font-size: 2.5rem;
-    top: 2.6rem;
     justify-content: center;
+    width: 25%;
+    color: var(--title_color);
+}
+
+h2 {
+    font-size: 1.8rem;
+    justify-content: center;
+    width: 30%;
+    color: var(--subtitle_color);
 }
 
 .Orchid {
