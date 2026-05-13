@@ -32,6 +32,8 @@ body {
     --font_standard: 1.3rem;
     --font_medium: 1.6rem;
     --font_large: 1.8rem;
+    --outer-shadow: -12px -12px 24px #fff, 12px 12px 24px #aab7ca;
+    --inner-shadow: inset -7px -7px 12px #fff, inset 7px 7px 12px #aab7ca;
 }
 
 main {
@@ -73,16 +75,18 @@ h1 {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     padding-bottom: 1rem;
+
 }
 
 .Card {
     flex: 0 0 auto;
-    width: 15rem;
-    height: 18rem;
+    width: 16rem;
+    height: 23rem;
     background-color: var(--card);
     margin: 1.6rem;
     border-radius: 1rem;
     scroll-snap-align: start;
+    box-shadow: var(--outer-shadow);
 }
 
 .Card img {
