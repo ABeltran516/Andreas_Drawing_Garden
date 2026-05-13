@@ -13,7 +13,9 @@ body {
 }
 
 html {
-    font-family: Arial, sans-serif;
+    font-family: "Numans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 62.5%;
 }
 
@@ -32,7 +34,7 @@ body {
     --font_standard: 1.3rem;
     --font_medium: 1.6rem;
     --font_large: 1.8rem;
-    --outer-shadow: -12px -12px 24px #fff, 12px 12px 24px #aab7ca;
+    --outer-shadow: -2px -2px 12px #ebf3ff, 12px 12px 24px #aab7ca;
     --inner-shadow: inset -7px -7px 12px #fff, inset 7px 7px 12px #aab7ca;
 }
 
@@ -68,14 +70,11 @@ h1 {
     flex-wrap: nowrap;
     justify-content: flex-start;
     margin-top: 20rem;
-    margin-left: 4rem;
-    width: 100%;
-    max-width: 100vw;
+    width: 92%;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     padding-bottom: 1rem;
-
 }
 
 .Card {
@@ -83,7 +82,7 @@ h1 {
     width: 16rem;
     height: 23rem;
     background-color: var(--card);
-    margin: 1.6rem;
+    margin: 1.2rem;
     border-radius: 1rem;
     scroll-snap-align: start;
     box-shadow: var(--outer-shadow);
