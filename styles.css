@@ -123,3 +123,50 @@ footer {
     color: var(--title_color);
     font-weight: bold;
 }
+
+/* Reading Sections */
+
+.Main-reading {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 6rem;
+    overflow: hidden;
+}
+
+.Main-reading h1 {
+    width: 40%;
+    margin-bottom: 8rem;
+    font-size: 2.5rem;
+    justify-content: center;
+    text-align: center;
+    color: var(--subtitle_color);
+}
+
+.Read-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.Read-container img {
+    width: 55%;
+    height: 24rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: var(--outer-shadow);
+}
+
+.Read-container p {
+    width: 35%;
+    margin-left: 1rem;
+    font-size: var(--font_medium);
+    color: var(--title_color);
+}
+
+.Main-reading .Orchid-bg {
+    position: absolute;
+    transform: translate(130px, 310px);
+    rotate: 37deg;
+}
