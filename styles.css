@@ -167,11 +167,10 @@ footer {
 }
 
 .Main-reading h1 {
-    width: 40%;
-    margin-bottom: 8rem;
-    padding-top: 4rem;
+    width: 86%;
+    margin-bottom: 6rem;
+    padding-top: 6rem;
     font-size: 2.5rem;
-    justify-content: center;
     text-align: center;
     color: var(--subtitle_color);
 }
@@ -183,7 +182,7 @@ footer {
 }
 
 .Read-container img {
-    width: 55%;
+    width: 53%;
     height: 24rem;
     object-fit: cover;
     border-radius: 2rem;
@@ -191,8 +190,8 @@ footer {
 }
 
 .Read-container p {
-    width: 35%;
-    margin-left: 1rem;
+    width: 47%;
+    margin-left: 1.6rem;
     font-size: var(--font_medium);
     color: var(--title_color);
 }
