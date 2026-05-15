@@ -103,6 +103,7 @@ h2 {
     scroll-snap-align: start;
     box-shadow: var(--outer-shadow);
     transition: transform 0.2s ease;
+    outline: none;
 }
 
 .Card img {
