@@ -102,6 +102,7 @@ h2 {
     border-radius: 1rem;
     scroll-snap-align: start;
     box-shadow: var(--outer-shadow);
+    transition: transform 0.2s ease;
 }
 
 .Card img {
@@ -110,6 +111,10 @@ h2 {
     object-fit: cover;
     object-position: 0 60%;
     border-radius: 1rem;
+}
+
+.Card:active {
+    transform: translateY(-10px);
 }
 
 footer {
@@ -131,13 +136,40 @@ footer {
     position: relative;
     flex-direction: column;
     justify-content: start;
-    margin-top: 6rem;
+    margin-top: 3rem;
     overflow: hidden;
+}
+
+.Main-reading a {
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    color: var(--title_color);
+    font-family: "Numans", sans-serif;
+    font-weight: bold;
+}
+
+.Main-reading a::before {
+    content: "";
+    display: block;
+    background-image: url("./Assets/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: .1rem;
+    left: -1.6rem;
+}
+
+.Main-reading a:visited {
+    color: var(--title_color);
 }
 
 .Main-reading h1 {
     width: 40%;
     margin-bottom: 8rem;
+    padding-top: 4rem;
     font-size: 2.5rem;
     justify-content: center;
     text-align: center;
