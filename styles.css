@@ -29,6 +29,7 @@ body {
     --background_main: #EBF3FF;
     --card: #f8f9fa;
     --title_color: #384657;
+    --tailwind_color: rgba(75, 85, 99, 1);
     --subtitle_color: #206FD6;
     --footer_color: #f2f2f2;
     --footer_font1: 1.5rem;
@@ -138,7 +139,7 @@ footer {
     flex-direction: column;
     justify-content: start;
     margin-top: 3rem;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .Main-reading a {
@@ -189,7 +190,7 @@ footer {
 .Read-container {
     display: flex;
     width: 90%;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .Read-container img {
@@ -205,10 +206,42 @@ footer {
     margin-left: 1.6rem;
     font-size: var(--font_medium);
     color: var(--title_color);
+    text-shadow: 1px 1px 6px var(--tailwind_color);
 }
 
 .Main-reading .Orchid-bg {
     position: absolute;
     transform: translate(130px, 310px);
     rotate: 37deg;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Responsive Design */
+
+.Small-break {
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 0;
+}
+
+.Parragraph {
+    margin-top: 3.6rem;
+    width: 90%;
+    font-size: var(--font_medium);
+    color: var(--title_color);
+    text-shadow: 1px 1px 6px var(--tailwind_color);
+}
+
+.Highlighted-text {
+    color: var(--subtitle_color);
+    font-weight: bold;
+}
+
+.Quote-autor {
+    display: block;
+    padding-top: 9rem;
+    margin: 0 auto;
+    font-size: var(--font_large);
+    color: var(--title_color);
 }
