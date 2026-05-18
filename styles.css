@@ -246,6 +246,14 @@ footer {
     color: var(--title_color);
 }
 
+.Quote-single {
+    display: block;
+    padding-top: 6rem;
+    margin: 0 auto;
+    font-size: var(--font_large);
+    color: var(--title_color);
+}
+
 .Margin-bottom {
     margin-bottom: 6.6rem;
 }
