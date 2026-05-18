@@ -245,3 +245,7 @@ footer {
     font-size: var(--font_large);
     color: var(--title_color);
 }
+
+.Margin-bottom {
+    margin-bottom: 6.6rem;
+}
